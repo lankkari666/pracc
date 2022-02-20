@@ -1,0 +1,52 @@
+.pricing {
+  padding-top: 188px;
+  // .pricing__card
+  &__card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+
+.pricing-content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 57px;
+}
+.card {
+  // .card__img
+  &__img {
+    &_pricing {
+      object-fit: none;
+      height: 442px;
+    }
+  }
+  // .card__title
+  &__title {
+    font-size: 30px;
+    line-height: 48px;
+  }
+  // .card__text
+  &__text {
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 30px;
+  }
+  // .card__price
+  &__price {
+    background: var(--grey-bg);
+    align-self: flex-start;
+    border-radius: 5px;
+    padding: 5px 25px;
+    display: flex;
+    align-items: center;
+    column-gap: 6px;
+  }
+  &__value {
+    font-size: 30px;
+    line-height: 45px;
+  }
+  &__descr {
+    color: var(--grey-color);
+  }
+}

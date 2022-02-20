@@ -1,0 +1,105 @@
+.skills {
+  padding-top: 103px;
+  &__table {
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 0fr;
+    gap: 18px 18px;
+  }
+  // .skills__card
+  &__card {
+    background: var(--grey-bg);
+    border-radius: 10px;
+    padding: 35px 45px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    // .skills__card_speaking
+    &_speaking {
+      grid-area: 1 / 1 / 3 / 2;
+      img {
+        align-self: auto;
+      }
+    }
+    // .skills__card_writing
+    &_writing {
+      grid-area: 1 / 2 / 2 / 3;
+    }
+    img {
+      align-self: flex-end;
+    }
+    // .skills__card_reading
+    &_reading {
+      grid-area: 1 / 3 / 2 / 4;
+      justify-content: space-between;
+    }
+    // .skills__card_listening
+    &_listening {
+      grid-area: 2 / 2 / 2 / 4;
+      display: flex;
+      justify-content: space-between;
+      flex-direction: row;
+      .card__text {
+        margin-bottom: 30px;
+      }
+    }
+  }
+}
+.card__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.section {
+  // .section__title
+  &__title {
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 80px;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-bottom: 92px;
+  }
+}
+
+.card {
+  // .card__img
+  &__img {
+    object-fit: cover;
+    height: 100%;
+  }
+  // .card__title
+  &__title {
+    margin-block-start: 0;
+    margin-block-end: 0;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 80px;
+    margin-bottom: 35px;
+  }
+  // .card__text
+  &__text {
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-bottom: 30px;
+    color: var(--grey-color);
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  // .card__btn
+  &__btn {
+    align-self: start;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    padding: 17px 63px;
+    background: var(--dark-color);
+    color: var(--light-color);
+    &:hover {
+      background: var(--light-color);
+      color: var(--dark-color);
+    }
+  }
+}

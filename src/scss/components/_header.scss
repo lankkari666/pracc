@@ -1,0 +1,28 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 57px;
+}
+.logo {
+  object-fit: contain;
+  width: 108px;
+  height: 54px;
+}
+.nav {
+  // .nav__list
+  &__list {
+    display: flex;
+    column-gap: 37px;
+  }
+  // .nav__item
+  &__item {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    transition: all 0.3s ease;
+    &:hover {
+      border-bottom: 1px solid #263238;
+    }
+  }
+}
